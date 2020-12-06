@@ -31,3 +31,7 @@ Space Complexity: O(N)
 
 For the recursive implementation, the recursion will consume additional space in the function call stack. 
 In the worst case, the tree is of chain shape, and we will reach all the way down to the leaf node.
+
+For the iterative implementation, essentially we are doing a BFS (Breadth-First Search) traversal, where the stack will contain no more than two levels of the nodes. The maximal number of nodes in a binary tree is \frac{N}{2} 
+	
+ . Therefore, the maximal space needed for the stack would be O(N)
