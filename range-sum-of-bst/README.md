@@ -1,4 +1,4 @@
-<h2>DFS Implementation Approach 1</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> node of a binary search tree, return <em>the sum of values of all nodes with a value in the range <code>[low, high]</code></em>.</p>
+<h2>DFS and BFS Implementation</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> node of a binary search tree, return <em>the sum of values of all nodes with a value in the range <code>[low, high]</code></em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
