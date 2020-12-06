@@ -1,4 +1,4 @@
-<h2>unknown-problem</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> node of a binary search tree, return <em>the sum of values of all nodes with a value in the range <code>[low, high]</code></em>.</p>
+<h2>DFS Implementation Approach 1</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> node of a binary search tree, return <em>the sum of values of all nodes with a value in the range <code>[low, high]</code></em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -22,3 +22,12 @@
 	<li><code>1 &lt;= low &lt;= high &lt;= 10<sup>5</sup></code></li>
 	<li>All <code>Node.val</code> are <strong>unique</strong>.</li>
 </ul></div>
+
+Complexity Analysis
+
+Time Complexity: O(N), where N is the number of nodes in the tree.
+
+Space Complexity: O(N)
+
+For the recursive implementation, the recursion will consume additional space in the function call stack. 
+In the worst case, the tree is of chain shape, and we will reach all the way down to the leaf node.
