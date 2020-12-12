@@ -25,8 +25,14 @@ Merged tree:
 <p><b>Note:</b> The merging process must start from the root nodes of both trees.</p>
 </div>
 
-Complexity Analysis
+Complexity Analysis: DFS
 
 Time complexity : O(m). A total of m nodes need to be traversed. Here, m represents the minimum number of nodes from the two given trees.
 
 Space complexity : O(m). The depth of the recursion tree can go upto m in the case of a skewed tree. In average case, depth will be O(logm).
+
+Complexity Analysis: BFS
+
+Time complexity : O(n). We traverse over a total of n nodes. Here, nn refers to the smaller of the number of nodes in the two trees.
+
+Space complexity : O(n). The depth of stack can grow upto n in case of a skewed tree.
