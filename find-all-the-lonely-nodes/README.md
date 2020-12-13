@@ -1,4 +1,4 @@
-<h2>unknown-problem</h2><h3>Easy</h3><hr><div><p>In a binary tree, a <strong>lonely</strong> node is a node that is the only child of its parent node. The root of the tree is not lonely because it does not have a parent node.</p>
+<h2>1469. Find All The Lonely Nodes</h2><h3>Easy</h3><hr><div><p>In a binary tree, a <strong>lonely</strong> node is a node that is the only child of its parent node. The root of the tree is not lonely because it does not have a parent node.</p>
 
 <p>Given the <code>root</code> of a binary tree, return <em>an array containing the values of all lonely nodes</em> in the tree. Return the list <strong>in any order</strong>.</p>
 
