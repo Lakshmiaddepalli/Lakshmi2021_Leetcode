@@ -15,13 +15,28 @@
  */
 class Solution {
     public int maxDepth(TreeNode root) {
+        
         if(root == null){
             return 0;
-        }else{
-            int left_max_height = maxDepth(root.left);
-            int right_max_height = maxDepth(root.right);
-            return Math.max(left_max_height,right_max_height) + 1;
         }
         
+        Deque<TreeNode> q = new ArrayDeque<>();
+        TreeNode curr;
+        int depth = 0;
+        int lengthoflevel = 0;
+        
+        q.offer(root);
+        
+        while(!q.isEmpty()){
+            depth++;
+            lengthoflevel = q.size();
+            for(int i = 0; i < lengthoflevel; i++){
+                curr = q.poll();
+                if(curr.left!=null){q.offer(curr.left);}
+                if(curr.right!=null){q.offer(curr.right);}
+            }
+        }
+        
+        return depth;
     }
 }
