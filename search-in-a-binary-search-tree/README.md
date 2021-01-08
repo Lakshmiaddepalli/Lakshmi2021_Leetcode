@@ -23,3 +23,7 @@ And the value to search: 2
 
 <p>Note that an empty tree is represented by <code>NULL</code>, therefore you would see the expected output (serialized tree format) as&nbsp;<code>[]</code>, not <code>null</code>.</p>
 </div>
+
+Time complexity : O(H), where H is a tree height. That results in O(logN) in the average case, and O(N) in the worst case.
+Space complexity : O(H) to keep the recursion stack, i.e. O(logN) in the average case, and O(N) in the worst case.
+
