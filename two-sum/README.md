@@ -34,3 +34,12 @@
 	<li><strong>Only one valid answer exists.</strong></li>
 </ul>
 </div>
+
+1. Complexity Analysis
+
+2. Time complexity : O(n2)
+ ). For each element, we try to find its complement by looping through the rest of array which takes O(n)O(n) time. Therefore, the time complexity is O(n^2)O(n 
+2
+ ).
+
+Space complexity : O(1).
