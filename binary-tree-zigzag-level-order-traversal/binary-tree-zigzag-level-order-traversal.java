@@ -19,14 +19,18 @@ class Solution {
         // Creating an result array
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         
+        // If root is null return empty result array
         if(root==null){
             return result;
         }
         
+        //Creating an deque
         ArrayDeque<TreeNode> deque = new ArrayDeque<TreeNode>();
         
+        //Adding the root first to the deque
         deque.addFirst(root);
         
+        //Creating an temp row
         List<Integer> temp = null;
         
         while(!deque.isEmpty()){
@@ -39,7 +43,6 @@ class Solution {
                 
                 TreeNode node = deque.removeFirst();
                 temp.add(node.val);
-                
                 
                 if(node.left!=null){
                     deque.addLast(node.left);
