@@ -14,11 +14,11 @@ class Solution {
     public void inorder(TreeNode o, TreeNode c) {
         if (o != null) {
             
+            inorder(o.left, c.left);
+            inorder(o.right, c.right);  
             if (o == target) {
                 ans = c;    
             }
-            inorder(o.left, c.left);
-            inorder(o.right, c.right);    
         }
     }
     
