@@ -20,7 +20,6 @@ class Solution {
             String letters = phone.get(digit);
             for(int i = 0; i < letters.length(); i++){
                 String letter = phone.get(digit).substring(i,i+1);
-                System.out.println(next_digits.substring(1));
                 backtrack(combination + letter, next_digits.substring(1));
             }
         }
